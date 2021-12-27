@@ -16,4 +16,13 @@ public class MoveDown : MonoBehaviour
     {
         transform.position -= transform.up * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Base")
+        {
+            Destroy(gameObject);
+            Debug.Log("Do something here");
+        }
+    }
 }

@@ -22,7 +22,7 @@ public class MoveDown : MonoBehaviour
         if (collision.gameObject.tag == "Base")
         {
             Destroy(gameObject);
-            Debug.Log("Do something here");
         }
     }
+
 }

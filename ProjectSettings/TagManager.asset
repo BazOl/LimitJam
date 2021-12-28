@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Base
+  - DownE
+  - RightE
+  - LeftE
+  - UpE
   layers:
   - Default
   - TransparentFX
@@ -13,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
   - Enemy
+  - Ground
   - 
   - 
   - 

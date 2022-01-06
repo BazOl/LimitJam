@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 167291297, guid: 1899a2bd321435f4fb31fadc897e1156, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 2783922878764455871}
   - component: {fileID: -5598757338664391188}
   - component: {fileID: -1197499577942622076}
+  - component: {fileID: 2785526903437887583}
   m_Layer: 0
   m_Name: EnemyS
   m_TagString: RightE
@@ -237,3 +238,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &2785526903437887583
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694237266509247227}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.07524061, y: -0.35771084}
+  m_Size: {x: 1.0440454, y: 1.0440454}
+  m_Direction: 0

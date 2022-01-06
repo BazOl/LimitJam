@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject loseScreen;
+    [SerializeField] BaseScript baseScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (baseScript.hitBase)
+        {
+            loseScreen.SetActive(true);
+        }
     }
 }

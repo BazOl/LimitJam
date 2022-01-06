@@ -7,9 +7,9 @@ TagManager:
   - Enemy
   - Base
   - DownE
-  - RightE
   - LeftE
   - UpE
+  - RightE
   layers:
   - Default
   - TransparentFX

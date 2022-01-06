@@ -8,13 +8,8 @@ public class MoveDown : MonoBehaviour
 
     void Update()
     {
-        transform.position -= transform.up * speed * Time.deltaTime;
+
+       transform.position -= transform.up * speed * Time.deltaTime;
     }
-
-
-
-    
-
-    
 
 }

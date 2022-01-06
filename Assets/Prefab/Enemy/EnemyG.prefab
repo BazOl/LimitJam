@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1146155754246662536}
   - component: {fileID: 8304001545111767072}
   - component: {fileID: 1643129135750169158}
+  - component: {fileID: -69012523659719735}
   m_Layer: 0
   m_Name: EnemyG
   m_TagString: LeftE
@@ -69,6 +70,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &-69012523659719735
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653696927640387010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.07524061, y: -0.35771084}
+  m_Size: {x: 1.0440454, y: 1.0440454}
+  m_Direction: 0
 --- !u!1 &3073934699921848773
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -196156254, guid: 0921437d31189bc4c940c6e55b3656d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

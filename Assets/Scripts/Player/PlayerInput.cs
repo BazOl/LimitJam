@@ -15,6 +15,10 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
 
 
+    public AudioClip shotSound;
+    public AudioSource audio;
+
+
     int upAmount = 3;
     int downAmount = 3;
     int leftAmount = 3;
@@ -26,7 +30,8 @@ public class PlayerInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioSource audio = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -111,6 +116,8 @@ public class PlayerInput : MonoBehaviour
 
     void UpdatePoints() 
     {
+        audio.clip = shotSound;
+        audio.Play();
         score++;
         scoreText.text = "Score: " + score;
     }

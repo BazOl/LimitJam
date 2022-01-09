@@ -96,6 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126767192054357018}
   - component: {fileID: 2126767192054357021}
+  - component: {fileID: 449184283738267879}
   m_Layer: 6
   m_Name: wolf_151
   m_TagString: Untagged
@@ -170,6 +171,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &449184283738267879
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126767192054357019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 495256181c0fab145a9d9bf9995f0ee4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2126767192377140161
 GameObject:
   m_ObjectHideFlags: 0

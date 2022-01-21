@@ -11,6 +11,10 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] TextMeshProUGUI leftText;
     [SerializeField] TextMeshProUGUI rightText;
 
+    [SerializeField] GameObject nomorearrows;
+    [SerializeField] TextMeshProUGUI noarrowAmountText;
+
+
 
     [SerializeField] TextMeshProUGUI scoreText;
 
@@ -59,6 +63,12 @@ public class PlayerInput : MonoBehaviour
                 upAmount++;
                 UpdatePoints();
             }
+            else if (upAmount == 0)
+            {
+                noarrowAmountText.text = "You have no more UP arrows";
+                StartCoroutine(NoMore());
+                //Debug.Log("Uh oh");
+            }
             else 
             {
                 Debug.Log("No enemies on screen");
@@ -73,6 +83,12 @@ public class PlayerInput : MonoBehaviour
                 Destroy(GameObject.FindWithTag("DownE"));
                 downAmount++;
                 UpdatePoints();
+            }
+            else if (downAmount == 0)
+            {
+                noarrowAmountText.text = "You have no more DOWN arrows";
+                StartCoroutine(NoMore());
+                // Debug.Log("Uh oh");
             }
             else 
             {
@@ -89,6 +105,12 @@ public class PlayerInput : MonoBehaviour
                 rightAmount++;
                 UpdatePoints();
             }
+            else if (rightAmount == 0)
+            {
+                noarrowAmountText.text = "You have no more RIGHT arrows";
+                StartCoroutine(NoMore());
+                Debug.Log("Uh oh");
+            }
             else 
             {
                 Debug.Log("No enemies on screen");
@@ -104,6 +126,12 @@ public class PlayerInput : MonoBehaviour
                 leftAmount++;
                 UpdatePoints();
             }
+            else if(leftAmount == 0) 
+            {
+                Debug.Log("Uh oh");
+                noarrowAmountText.text = "You have no more LEFT arrows";
+                StartCoroutine(NoMore());
+            }
             else 
             {
                 Debug.Log("No enemies on screen");
@@ -113,6 +141,12 @@ public class PlayerInput : MonoBehaviour
         
     }
 
+    IEnumerator NoMore() 
+    {
+        nomorearrows.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        nomorearrows.gameObject.SetActive(false);
+    }
 
     void UpdatePoints() 
     {

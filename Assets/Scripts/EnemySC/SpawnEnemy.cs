@@ -26,6 +26,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             SpawnRandomEnemy();
         }
+
         timer += Time.deltaTime;
 
         if (timer >= 2)
@@ -34,12 +35,9 @@ public class SpawnEnemy : MonoBehaviour
             timer = 0;
         }
 
-        Mathf.Clamp(spawnRate,0,10);
+        Mathf.Clamp(spawnRate, 0, 10);
 
-
-
-
-    }
+}
 
     void SpawnRandomEnemy()
     {
@@ -48,7 +46,13 @@ public class SpawnEnemy : MonoBehaviour
             int enemyIndex = Random.Range(0, enemyPrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-rangeX, rangeX), 7, 0);
             Instantiate(enemyPrefabs[enemyIndex], spawnPos, enemyPrefabs[enemyIndex].transform.rotation);
+            if(spawnRate < 1f) 
+            {
+                int enemyIndex1 = Random.Range(0, enemyPrefabs.Length);
+                Vector3 spawnPos1 = new Vector3(Random.Range(-rangeX, rangeX), 7, 0);
+                Instantiate(enemyPrefabs[enemyIndex1], spawnPos1, enemyPrefabs[enemyIndex1].transform.rotation);
+            }
         }
-
     }
+
 }
